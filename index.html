@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PicFit — Compress, Resize & Convert Images | Free</title>
+<meta name="description" content="PicFit: compress, resize and convert JPG, PNG and WebP images in your browser. Your photos never leave your device. Free version, unlimited downloads for now.">
+<link rel="stylesheet" href="styles.css"></head><body>
+<header><div class="wrap hero"><div><div class="logo">✦ PicFit</div><h1>Make any photo<br>light, sharp &amp; ready.</h1><p>Compress, resize and convert JPG, PNG and WebP in seconds — right in your browser. No signup, no upload, your photos never leave your device.</p><div class="pills"><span>✓ 100% Free now</span><span>✓ No signup</span><span>✓ Private by design</span></div><div id="statusBar" class="status">Loading…</div></div><img class="heroImg" src="assets/hero.webp" alt="AI illustration of a photo being resized and compressed"></div></header>
+<main class="wrap">
+<section class="card"><h2>1. Upload an image</h2>
+<input type="file" id="fileInput" accept="image/png,image/jpeg,image/webp">
+<p class="muted">JPG, PNG, WebP. The image is processed on your device only.</p>
+<div id="origInfo" class="muted"></div></section>
+
+<section class="card"><h2>2. Choose size &amp; quality</h2>
+<label>Preset width
+<select id="preset"><option value="0">Original size</option><option value="1080">1080 px — Instagram post</option><option value="800">800 px — Website / blog</option><option value="500">500 px — Small / fast loading</option><option value="300">300 px — Thumbnail</option></select></label>
+<label>Custom width (px, optional) <input type="number" id="customWidth" min="50" max="4000" placeholder="e.g. 1200"></label>
+<label>Quality <span id="qVal">80%</span> <input type="range" id="quality" min="10" max="100" value="80"></label>
+<label>Output format
+<select id="format"><option value="image/jpeg">JPG</option><option value="image/png">PNG</option><option value="image/webp">WebP</option></select></label>
+<button id="processBtn" class="btn">Make it ready</button>
+<p class="muted">Your processed image is fully ready here — you can preview it before downloading.</p></section>
+
+<section class="card" id="previewCard" hidden><h2>3. Preview — ready to download</h2>
+<img id="previewImg" alt="Processed preview">
+<div id="procInfo" class="muted"></div>
+<button id="downloadBtn" class="btn big">Download image</button>
+<p class="muted">Free version: unlimited downloads for now.</p></section>
+
+<section class="card"><h2>Free version</h2>
+<p>This version is fully free — unlimited downloads, all formats, all sizes. A Pro plan will be added later.</p></section>
+
+<section class="card"><h2>How it works</h2>
+<ol><li>Open PicFit, upload a photo, choose size and quality.</li><li>Your processed image is fully ready and previewed.</li><li>Download it — free and unlimited in this version.</li><li>A Pro plan will be added later.</li></ol></section>
+</main>
+<footer><div class="wrap muted">PicFit — browser-only image tool. Photos never leave your device.</div></footer>
+<script src="app.js"></script></body></html>
